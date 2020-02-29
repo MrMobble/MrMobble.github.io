@@ -1,0 +1,14 @@
+
+.thumbnail-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+    img {
+        transition: $transition-base;
+        transform: scale(1.00);
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

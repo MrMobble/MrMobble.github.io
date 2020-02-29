@@ -1,0 +1,23 @@
+// -- import roboto font.
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+// --- override bootstrap colours.
+$light: #f4f8f7;
+$dark: #272727;
+
+// -- import bootstrap.scss.
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// -- import custom scss classes.
+@import "components/addons";
+@import "layout/footer";
+@import "layout/thumbnail";
+@import "layout/info";
+
+// -- body override.
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+
+    padding-top: 56px;
+}

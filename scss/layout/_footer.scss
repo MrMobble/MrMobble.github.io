@@ -1,0 +1,10 @@
+.link, .link:visited {
+    transition: $transition-base;
+    text-decoration: none;
+    font-weight: 500 !important;
+    color: $dark;
+    &:hover {
+        text-decoration: none;
+        color: #6c757d !important;
+    }
+}
