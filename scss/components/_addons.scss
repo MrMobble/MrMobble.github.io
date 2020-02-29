@@ -47,6 +47,10 @@
     padding-top: 290px;
 }
 
-.z-fixed {
+.z-background {
     z-index: $zindex-background !important;
+}
+
+.test {
+    top: 56px !important;
 }
