@@ -3,8 +3,10 @@
 
 // --- override bootstrap colours.
 $light: #f4f8f7;
-$dark: #272727;
+//$dark: #272727;
+$dark: #25252B;
 $primary: #0098FF;
+$secondary: #2C2C32;
 
 // -- import bootstrap.scss.
 @import "node_modules/bootstrap/scss/bootstrap.scss";

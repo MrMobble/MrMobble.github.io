@@ -1,7 +1,7 @@
 .info {
 
     padding: 2rem 1rem;
-    color: $dark;
+    color: $white;
 
     p {
         font-size: 1rem;
@@ -19,4 +19,8 @@
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+.text-white-trans {
+    color: rgba(255,255,255,0.6)
 }
