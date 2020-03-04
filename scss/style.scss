@@ -4,6 +4,7 @@
 // --- override bootstrap colours.
 $light: #f4f8f7;
 $dark: #272727;
+$primary: #0098FF;
 
 // -- import bootstrap.scss.
 @import "node_modules/bootstrap/scss/bootstrap.scss";
@@ -13,6 +14,11 @@ $dark: #272727;
 @import "layout/footer";
 @import "layout/thumbnail";
 @import "layout/info";
+@import "layout/buttons";
+
+html {
+    scroll-behavior: smooth;
+}
 
 // -- body override.
 body {

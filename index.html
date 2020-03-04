@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#projects">Portfolio</a>
                     </li>
                     <li class="nav-item text-center">
                         <a class="nav-link" href="#">About</a>
@@ -37,31 +37,35 @@
           </div>
         </nav>
 
-        <section class="jumbotron text-center bg-light rounded-0 sticky-top test z-background mb-0">
+        <section class="jumbotron text-center bg-light rounded-0 position-sticky top-nav z-background mb-0" id="about">
             <div class="container">
-                <p class="lead text-muted mx-auto w-75">A graduate games programmer from London, currently looking for work in the gaming industry.
-                Passionate about game design with Unity and mastering the development and creative complexities.</p>
-                <!-- <a href="#link" class="btn btn-outline-dark not-focusable pt-2" role="button">LinkedIn</a> -->
-                <a href="https://github.com/MrMobble" class="btn not-focusable px-3"><i class="fab fa-github" style='font-size:36px'></i></a>
-                <a href="https://www.linkedin.com/in/olivermobbs" class="btn not-focusable px-3"><i class="fab fa-linkedin-in" style='font-size:36px'></i></a>
+              <!-- <h4 class="font-weight-normal text-uppercase">About</h4> -->
+              <p class="lead text-muted mx-auto w-75">A graduate games programmer from London, currently looking for work in the gaming industry.
+              Passionate about game design with Unity and mastering the development and creative complexities.</p>
+              <!-- <a href="#link" class="btn btn-outline-dark not-focusable pt-2" role="button">LinkedIn</a> -->
+              <a href="https://github.com/MrMobble" class="btn not-focusable px-3"><i class="fab fa-github" style='font-size:36px'></i></a>
+              <a href="https://www.linkedin.com/in/olivermobbs" class="btn not-focusable px-3"><i class="fab fa-linkedin-in" style='font-size:36px'></i></a>
         
             </div>
           </section>
 
-        <div class="d-md-flex flex-wrap justify-content-center mx-auto bg-white pt-4">
+        <div class="d-md-flex flex-wrap justify-content-center mx-auto bg-white py-4 position-relative">
 
-          <div class="container">
+          <div class="container" id="projects">
+
+            <h4 class="font-weight-normal text-center text-uppercase mb-4">Projects</h4>
+
             <div class="row">
 
                 <div class="col-md-6 text-center">
 
                   <div class="thumbnail-item">
-                    <a href="project"><img src="images/project-main.png" class="img-fluid rounded shadow-sm" alt="Responsive image"></a>
+                    <a href="project.html"><img src="images/project-main.png" class="img-fluid rounded shadow-sm" alt="Responsive image"></a>
                   </div>
 
                   <div class="my-1 py-2">
-                    <h5 class="font-weight-light">Tank Physics Project</h5>
-                    <p class="text-muted lh-0">C++ Unreal Engine</p>
+                    <h5 class="font-weight-normal">Tank Physics Project</h5>
+                    <!-- <p class="text-muted lh-0">University</p> -->
                   </div>
 
                 </div>
@@ -73,8 +77,8 @@
                   </div>
 
                   <div class="my-1 py-2">
-                    <h5 class="font-weight-light">RoboHood Game</h5>
-                    <p class="text-muted lh-0">C++ Unreal Engine</p>
+                    <h5 class="font-weight-normal">RoboHood Game</h5>
+                    <!-- <p class="text-muted lh-0">University</p> -->
                   </div>
 
                 </div>
@@ -86,8 +90,8 @@
                   </div>
 
                   <div class="my-1 py-2">
-                    <h5 class="font-weight-light">Sumo Tank AI Game</h5>
-                    <p class="text-muted lh-0">C# Unity</p>
+                    <h5 class="font-weight-normal">Sumo Tank AI Game</h5>
+                    <!-- <p class="text-muted lh-0">University</p> -->
                   </div>
 
                 </div>
@@ -99,8 +103,8 @@
                   </div>
 
                   <div class="my-1 py-2">
-                    <h5 class="font-weight-light">Hoppy Cube</h5>
-                    <p class="text-muted lh-0">C# Unity Mobile</p>
+                    <h5 class="font-weight-normal">Hoppy Cube</h5>
+                    <!-- <p class="text-muted lh-0">Personal</p> -->
                   </div>
 
                 </div>
@@ -110,27 +114,24 @@
 
         </div>
 
-        <footer class="footer py-3 mt-4 border-top border-light"> 
-          <div class="container d-flex font-weight-normal">
-            <div class="copyright mr-auto text-muted">© 2020 Copyright: Oliver Mobbs</div>
-            <a href="..." class="px-2 link">LINKEDIN</a>
-            <a href="..." class="px-2 link">GITHUB</a>
+        <footer class="footer border-top border-light bg-white position-relative mt-4"> 
+          <div class="container font-weight-normal">
+
+            <div class="row p-3">
+              
+              <div class="col-auto mr-md-auto ml-md-0 m-auto p-0">
+              <div class="copyright text-muted">© 2020 Copyright: Oliver Mobbs</div>
+              </div>
+
+              <div class="col-auto ml-md-auto mr-md-0 m-auto p-0">
+              <a href="..." class="px-2 link">LINKEDIN</a>
+              <a href="..." class="px-2 link">GITHUB</a>
+              </div>
+
+            </div>
+
           </div>
         </footer>
-
-        <!-- <div class="footer container d-flex font-weight-bold">
-          <p class="mr-auto m-0 px-1 font-weight-light">© 2020 Copyright By Oliver Mobbs</p>
-          <a href="..." class="float-right px-1">LINKEDIN</a>
-          <a href="..." class="float-right px-1">GITHUB</a>
-        </div> -->
-
-
-        <!-- <footer class="text-muted bg-light">
-          <div class="container text-center">
-            <p>Oliver Mobbs - Portfolio</p>
-          </div>
-        </footer> -->
-      
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -141,9 +142,3 @@
     </body>
 </html>
 
-
-<!-- <div class="thumbnail-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-<div class="thumbnail-item-caption-content text-center text-white">
-<p>More</p>
-</div>
-</div> -->

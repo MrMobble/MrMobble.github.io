@@ -38,19 +38,26 @@
     color: #6c757d !important;
 }
 
-.fixed-top-56 {
-    top: 56px;
-    position: fixed;
-}
-
-.pt-large {
-    padding-top: 290px;
-}
-
 .z-background {
     z-index: $zindex-background !important;
 }
 
-.test {
+.top-nav {
     top: 56px !important;
+}
+
+span::before,
+span::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color:
+    #131313;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.underline {
+    border-bottom: 1px solid #dee2e6 !important
 }
