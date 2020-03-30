@@ -9678,13 +9678,6 @@ li::marker {
   display: none;
 }
 
-.img-text {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  padding-left: 15px;
-}
-
 .link, .link:visited {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
