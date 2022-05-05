@@ -1,0 +1,115 @@
+.nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 0 0;
+
+    .container {
+        flex-wrap: inherit;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        max-height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .nav-link {
+        color: rgba(255, 255, 255, 1) !important;
+        text-decoration: none;
+        text-align: right;
+        font-size: 1.15rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        color: rgba(255, 255, 255, 1) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+}
+
+.nav-icon {
+    font-size: 1.25rem;
+    line-height: 1rem;
+    display: none;
+    .nav-icon-image {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.5em;
+        height: 1.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.65%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .nav-icon-image:hover {
+        cursor: pointer !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.00%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+    }
+}
+
+.nav-title {
+    display: block;
+    text-align: center;
+
+    h1, h2, h3, h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.65);
+    }
+}
+
+@media (max-width: 36em) {
+    .navbar {
+        flex-direction: column;
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+
+    .collapsed {
+        max-height: 0;
+    }
+
+    .nav-container {
+        width: 65%;
+        flex-direction: column !important;
+        justify-content: flex-end !important; 
+    }
+
+    .nav-title {
+        margin-left: 0.75rem;
+    }
+
+    .navbar .nav-link {
+        text-align: right !important;
+    }
+
+    .nav-icon {
+        display: inline-block !important;
+        align-self: flex-end;
+    }
+}
+
+
+
+
+
+
+

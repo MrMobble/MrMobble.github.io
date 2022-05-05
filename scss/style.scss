@@ -1,31 +1,39 @@
 // -- import roboto font.
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
-// --- override bootstrap colours.
-$light: #f4f8f7;
-//$dark: #272727;
-$dark: #25252B;
-$primary: #0098FF;
-$secondary: #2C2C32;
+@import 'util/utility';
+@import 'util/flex.scss';
+@import 'util/list.scss';
+@import 'util/spacing.scss';
 
-// -- import bootstrap.scss.
-@import "node_modules/bootstrap/scss/bootstrap.scss";
-
-// -- import custom scss classes.
-@import "components/addons";
-@import "layout/footer";
-@import "layout/thumbnail";
-@import "layout/info";
-@import "layout/buttons";
+@import 'components/buttons.scss';
+@import 'components/nav.scss';
+@import 'components/hero.scss';
+@import 'components/footer.scss';
+@import 'components/container.scss';
+@import 'components/grid.scss';
+@import 'components/image.scss';
+@import 'components/info.scss';
+@import 'components/gallery.scss';
 
 html {
     scroll-behavior: smooth;
 }
 
-// -- body override.
+a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    cursor: default;
+}
+
 body {
     font-family: 'Roboto';
     font-weight: 300;
-
-    padding-top: 56px;
+    background-color: #080808;
+    margin: 0;
 }

@@ -1,0 +1,15 @@
+.footer {
+  position: relative; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.5) !important;
+    padding: 0;
+    margin: 0; }
+  .footer a {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 400; }
+  .footer .footer-link, .footer .footer-link:visited {
+    text-decoration: none;
+    margin: 0 0 0 0.5rem; }
+  .footer .footer-link:hover, .footer .footer-link:visited:hover {
+    color: white !important;
+    border-bottom: 1px solid white; }
