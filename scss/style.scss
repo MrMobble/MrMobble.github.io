@@ -1,11 +1,13 @@
 // -- import roboto font.
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
+// utility.
 @import 'util/utility';
 @import 'util/flex.scss';
 @import 'util/list.scss';
 @import 'util/spacing.scss';
 
+// components.
 @import 'components/buttons.scss';
 @import 'components/nav.scss';
 @import 'components/hero.scss';
@@ -15,6 +17,7 @@
 @import 'components/image.scss';
 @import 'components/info.scss';
 @import 'components/gallery.scss';
+@import 'components/video.scss';
 
 html {
     scroll-behavior: smooth;

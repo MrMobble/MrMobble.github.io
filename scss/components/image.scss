@@ -13,11 +13,19 @@
 
     .description {
         cursor: default;
-        font-size: 0.9rem;
         color: rgba(255, 255, 255, 0.65);
-        padding: 0;
-        margin: 0;
+        margin: 0 0 0 0;
+
+        .tag {
+            //display: inline-block;
+            padding: .15em .3em;
+            font-size: .9em;
+            font-weight: 300;
+            text-align: center;
+            vertical-align: baseline;
+        }
     }
+
 
     .img-container {
         position: relative;
@@ -38,6 +46,7 @@
     }
 
     .overlay-text {
+        position: absolute;
         font-size: 1.1rem;
         font-weight: 400;
         color: rgba(255, 255, 255, 1);

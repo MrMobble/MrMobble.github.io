@@ -1,6 +1,13 @@
+@charset "UTF-8";
 .list-styled {
   padding: 0 0 0 1rem;
   margin: .5rem 0 0 0; }
 
 .list-item {
   padding: .1rem 0 0 0; }
+
+.bullet-before:before {
+  content: "• "; }
+
+.bullet-after::after {
+  content: " •"; }
