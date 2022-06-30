@@ -1,7 +1,6 @@
-
 .list-styled {
     padding: 0 0 0 1rem;
-    margin: .5rem 0 0 0;
+    margin: .2rem 0 0 0;
 }
 
 .list-item {
@@ -14,4 +13,8 @@
 
 .bullet-after::after {
     content:" •"
+}
+
+.p-bullet {
+    padding: .1em 0 .1em 0 !important;
 }

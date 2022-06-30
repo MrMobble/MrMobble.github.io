@@ -22,20 +22,20 @@
     <nav class="nav">
         <div class="container flex">
 
+            <!-- Nav Title -->
             <div class="nav-title">
                 <a href="index.html"> <h1>OLIVER MOBBS</h1> </a>
             </div>
 
+            <!-- Responsive Nav Icon -->
             <div class="nav-icon m-0" onclick="navtoggle()">
                 <span class="nav-icon-image">
             </div>
 
+            <!-- Nav Links -->
             <ul class="navbar collapsed" id="navbar">
                 <li class="text-center ml-0">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="text-center ml-0">
-                    <a class="nav-link" href="">Work</a>
                 </li>
             </ul>
 
@@ -80,48 +80,46 @@
 
                 <div class="col-100">
                     <div class="ratio-16x9">
-                        <iframe class="video-embed" src="https://www.youtube.com/embed/2SHvcL30sFM"></iframe>
+                        <iframe class="video-embed" src="https://www.youtube.com/embed/2SHvcL30sFM?autoplay=1"></iframe>
                     </div>
                 </div>
                 
                 <div class="col-50">
                     <div class="gallery-desc text-right">
                         <h1>Inventory</h1>
-                        <p>Information about the inventory here!</p>
-
-                        <p class="bullet-after">Item Moving / Swapping</p>
-                        <p class="bullet-after">Automatic Item Stacking</p>
-                        <p class="bullet-after">Item Splitting 50/50</p>
-                        <p class="bullet-after">Item Tooltip</p>
-                        
-                        <!-- <ul class="list-styled text-muted">
-                            <li class="list-item">Item Moving / Swapping</li>
-                            <li class="list-item">Automatic Item Stacking</li>
-                            <li class="list-item">Item Splitting 50/50</li>
-                            <li class="list-item">Item Tooltip</li>
-                        </ul> -->
+                        <p class='pb-0'>The inventory was built with the following features.</p>
+                        <p class="bullet-after p-bullet">Item Moving / Swapping</p>
+                        <p class="bullet-after p-bullet">Automatic Item Stacking</p>
+                        <p class="bullet-after p-bullet">Item Splitting 50/50</p>
+                        <p class="bullet-after p-bullet">Item Tooltip</p>
+                        <p class="bullet-after p-bullet">Item Dropping</p>                 
                     </div>
                 </div>
 
                 <div class="col-50">
-                    <img src="images/survival/inventory.png" class="img-fluid" alt="Responsive image">
+                    <img src="images/survival/inventory.png" class="img-fluid" alt="responsive image">
                 </div>
 
                 <div class="col-50">
-                    <img src="images/survival/crafting.gif" class="img-fluid" alt="Responsive image">
+                    <img src="images/survival/crafting.gif" class="img-fluid" alt="responsive image">
                 </div>
 
                 <div class="col-50">
                     <div class="gallery-desc text-left">
                         <h1>Crafting</h1>
-                        <p>Information about the crafting here!</p>
+                        <p>The crafting system handles the creation of items and removal of materials from the inventory, 
+                            the system stores multiple recipies that are used to check if the inventory contains the required meterials to craft an item. 
+                            The crafting system uses a queue to add and remove crafting requests from, 
+                            however due to the simplicity of the system once a crafting request has been sent it cannot be cancelled.</p>
                     </div>
                 </div>
+
                 <div class="col-50">
-                    <img src="images/survival/eating.gif" class="img-fluid" alt="Responsive image">
+                    <img src="images/survival/eating.gif" class="img-fluid" alt="responsive image">
                 </div>
+
                 <div class="col-50">
-                    <img src="images/survival/choptree.gif" class="img-fluid" alt="Responsive image">
+                    <img src="images/survival/choptree.gif" class="img-fluid" alt="responsive image">
                 </div>
             </div>
         </div>
@@ -131,19 +129,23 @@
     <div class="footer p-0">
         <div class="container py-0">
             <div class="row">
+
+                <!-- Footer Text -->
                 <div class='col-auto'>
                     <p>©2022 Copyright: Oliver Mobbs</p>
                 </div>
+
+                <!-- Footer Links -->
                 <div class='col-auto'>
                     <a class="footer-link" href="https://github.com/MrMobble">GITHUB</a>
                     <a class="footer-link" href="https://www.linkedin.com/in/olivermobbs">LINKEDIN</a>
                 </div>
+
             </div>
         </div>
     </div>
 
 </body>
-
         <!-- JavaScript -->
         <script src="js/nav.js"></script>
 </html>
