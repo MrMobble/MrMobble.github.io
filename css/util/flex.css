@@ -1,0 +1,17 @@
+.flex {
+  display: flex !important; }
+
+.justify-content-end {
+  justify-content: flex-end !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.flex-align-center {
+  align-items: center !important; }
+
+.flex-align-inherit {
+  align-items: inherit !important; }
+
+.row {
+  flex-direction: row; }

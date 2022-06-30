@@ -1,0 +1,29 @@
+.text-center {
+  text-align: center !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.bg-dark {
+  background-color: #080808; }
+
+.bg-secondary {
+  background-color: #131313; }
+
+.bg-one {
+  background-color: #1a1b1d; }
+
+.bg-two {
+  background-color: #15181a; }
+
+.bg-three {
+  background-color: #0d0d0d; }
+
+.text-white {
+  color: white; }
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.65); }

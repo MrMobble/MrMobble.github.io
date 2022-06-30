@@ -1,0 +1,24 @@
+.footer {
+    position: relative;
+    
+    p {
+        color: rgba(255, 255, 255, 0.5) !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.5) !important;
+        font-weight: 400;
+    }
+
+    .footer-link, .footer-link:visited {
+        text-decoration: none;
+        margin: 0 0 0 0.5rem;
+    }
+  
+    .footer-link:hover, .footer-link:visited:hover {
+        color: rgba(255, 255, 255, 1) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+}

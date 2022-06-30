@@ -1,0 +1,9 @@
+.btn-icon {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white; }
+  .btn-icon:hover {
+    color: rgba(255, 255, 255, 0.65); }
+  .btn-icon:focus {
+    border: none; }

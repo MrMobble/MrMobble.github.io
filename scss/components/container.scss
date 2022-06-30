@@ -1,0 +1,66 @@
+
+$breakpoints-up: ( base: 0px, small: 576px, medium: 992px, large: 1400px, xlarge: 1530px ) !default;
+$container-max-widths: ( small: 540px, medium: 960px, large: 1320px, xlarge: 1450px ) !default;
+
+@mixin make-container() {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container, .container-fluid {
+    @include make-container();
+}
+
+//
+@mixin breakpoint-up($name, $breakpoints: $breakpoints-up) {
+    $min: map-get($breakpoints, $name);
+    @if ($min) {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+// 
+@function breakpoint-infix($name, $breakpoints: $breakpoints-up) {
+    $min: map-get($breakpoints, $name);
+    @return if($min == 0, "", "-#{$name}");
+}
+
+// this is the max-widths loop.
+@each $breakpoint, $container-max-width in $container-max-widths {
+
+    // create container for each container width.
+    .container-#{$breakpoint} {
+        @extend .container-fluid;
+    }
+
+    // get the breakpoint value using the max-widths name.
+    @include breakpoint-up($breakpoint, $breakpoints-up) {
+
+        // what does the % actually do? where is documentation for this magic.
+        %responsive-container-#{$breakpoint} {
+            max-width: $container-max-width;
+        }
+
+        $add-breakpoint: true;
+
+        // add all breakpoints to the max-width up to the current value.
+        @each $breakpoint-name, $breakpoint-width in $breakpoints-up {
+
+            @if ($add-breakpoint) {
+                .container#{breakpoint-infix($breakpoint-name, $breakpoints-up)} {
+                    @extend %responsive-container-#{$breakpoint};
+                }
+
+                @if ($breakpoint == $breakpoint-name) {
+                    $add-breakpoint: false;
+                }
+            }
+        }
+    }  
+}

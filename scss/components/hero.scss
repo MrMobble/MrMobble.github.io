@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    margin-top: 2.5rem;
+
+    .container {
+        flex-wrap: inherit;
+        flex-direction: inherit;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 2.5em;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: .25em;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    .logo {
+        width: 300px;
+        padding: 0em 0.5em 0.5em 0em;
+        margin-top: 2em;
+    }
+
+}
+
+.about {
+    font-size: 1.25em;
+    color:rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 55%;
+    margin-top: 2.5em;
+}
+
+@media (max-width: 36em) {
+    .about {
+        text-align: center;
+        width: 85%;   
+    }
+}
